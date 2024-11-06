@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" href="images/icon.png" type="png" title="Icon">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/2f5a08066a.js" crossorigin="anonymous"></script>
+    <title>Personal portfolio website - Albert Kiama</title>
+</head>
+<body>
+
+<!------------My header------------>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><i class="fa-solid fa-icons fa-house"></i><a href="#header">Home</a></li>
+                    <li><i class="fa-solid fa-icons fa-user"></i><a href="#about">About</a></li>
+                    <li><i class="fa-solid fa-icons fa-laptop"></i><a href="#services">Servises</a></li>
+                    <li><i class="fa-solid fa-icons fa-file-invoice"></i><a href="#portfolio">Portfolio</a></li>
+                    <li><i class="fa-solid fa-icons fa-phone"></i><a href="#contacts">Contacts</a></li>
+                    <i class="fa-solid fa-icons fa-xmark" style="color: #ffffff;" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Albert</span> <br> from Kenya</h1>
+                <a href="Albert_CV.pdf" download class="resume" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </div>
+
+<!------------About section------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Profile_2.jpg" alt="profile picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="color: #bbbbbb">"Welcome to my website! I am a passionate computer science graduate with a strong focus on front-end development. 
+                        With expertise in graphic design and app design, I strive to create visually appealing and user-friendly experiences. 
+                        I am excited to tackle new challenges and ready for any opportunity that comes my way. Let's create something amazing together!"</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br><p style="color: #bbbbbb;">Web Designing & Development</p></li>
+                            <li><span>Android App Design</span><br><p style="color: #bbbbbb;">Designing & Development of Android App</p></li>
+                            <li><span>Graphic Design</span><br><p style="color: #bbbbbb;">Designing of Logos, Fliers, Cards etc</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2023 - Current</span><br><p style="color: #bbbbbb;">Digital Sale Associate at Platinum PLC</p></li>
+                            <li><span>May 2022 - Dec 2022</span><br><p style="color: #bbbbbb;">Internship at ICT Auhority of Kenya</p></li>
+                            <li><span>Sep 2019 - Dec 2021</span><br><p style="color: #bbbbbb;">Designing Website, logos, Advertising Materials - Freelancer</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br><p style="color: #bbbbbb;">Computer Science - University of Eldoret</p></li>
+                            <li><span>2014 - 2017</span><br><p style="color: #bbbbbb;">Secondary Education - Umoja School</p></li>
+                            <li><span>2006 - 2013</span><br><p style="color: #bbbbbb;">Primary Eucation - Muteta School</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------------my services---------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>"Looking for a web designer who combines creativity and technical expertise? 
+                    Look no further! With a background in computer science and a passion for stunning web experiences,
+                    I bring a unique blend of artistic vision and technical know-how."</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Graphic Design</h2>
+                <p>"Searching for a skilled graphic designer to bring your ideas to life? Your search ends here!  
+                    As a computer science graduate with a keen eye for aesthetics, I possess the perfect blend of technical proficiency 
+                    and artistic flair."</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>"Ready to bring your app ideas to the palms of millions? Look no further! With a solid background in computer 
+                    science and expertise in Android app development, I am equipped to turn your vision into a reality."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------My Portfolio--------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.png" alt="Work 1">
+                <div class="layer">
+                    <h3>Website Login Page</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, 
+                      erferendis dolores?</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 2.jpg" alt="Work 2">
+                <div class="layer">
+                    <h3>Infinitix Global Logo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, 
+                      erferendis dolores? </p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 3.jpg" alt="Work 3">
+                <div class="layer">
+                    <h3>Forex App Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, 
+                      erferendis dolores?</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 4.jpg" alt="Work 4">
+                <div class="layer">
+                    <h3>Content Writting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, 
+                      erferendis dolores?</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------------Contact Form------------------->
+
+<div id="contacts">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contactInfo">
+                    <h1 class="sub-title c-head">Contact Me!</h1>
+                    <p class="c-info">If you have a specific question or need assistance, please fill out the contact form below and 
+                        I will get back to you as soon as possible. I'm also open to feedback and suggestions that you may have. 
+                        I do value your opinion and am always looking for ways to improve my website and services</p>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="text">
+                                <h3>Adress</h3>
+                                <p class="c-info">Mlolongo - Along Mombasa RD</p>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p class="c-info">+254718448798 || +254100808851</p>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p class="c-info">albertkiamakariuki@gmail.com  ||  albertkiama99@outlook.com</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form name="submit-to-google-sheet">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="Name" required="required">
+                            <span>Full Names</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="Email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="Message" required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                    <span id="txt"></span>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-------------------------------Footer----------------------->
+
+<div id="footer">
+    <div class="social-icons">
+        <a href="https://web.facebook.com/albert.kiama.3" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #0050db;"></i></a>
+        <a href="https://twitter.com/CEO_Kiama" target="_blank"><i class="fa-brands fa-twitter" style="color: #00bbfa;"></i></a>
+        <a href="https://www.linkedin.com/in/albert-kiama-728859246/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #024bca;"></i></a>
+        <a href="https://www.youtube.com/@ceo_funfacts" target="_blank"><i class="fa-brands fa-youtube" style="color: #fa0000;"></i></a>
+        <a href="https://github.com/AlbertKiama" target="_blank"><i class="fa-brands fa-github" style="color: #002f5a;"></i></a>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Albert.<i class="fa-solid fa-people-roof"></i> C.E.O, Infinitix Global Tech</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("side-menu");
+
+        function openMenu(){
+            sideMenu.style.right = "0"
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-250px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGGlcmSV_FNvHDZUgLvhfSA_dwTKRmkrd3Kl3mDeHIQ9iumM-8UxNHI4dp4Ptnsx1RcQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const message = document.getElementById("txt")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                message.innerHTML = "Message Submitted Successifully"
+                setTimeout(function(){
+                    message.innerHTML =""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
