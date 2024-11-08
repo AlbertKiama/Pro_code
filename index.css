@@ -13,6 +13,7 @@ html {
 body {
     color: #fff;
     background-image: url(images/bg-tech.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -29,6 +30,7 @@ p {
     background-image: url(images/Bg_Desktop.jpg);
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 .container {
     padding: 10px 5%;
