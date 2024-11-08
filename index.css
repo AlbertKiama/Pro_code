@@ -498,37 +498,32 @@ nav .fa-solid {
     }
     nav .fa-solid, nav .fa-sharp {
         display: block;
-        font-size: 25px;
+        font-size: 35px;
     }
     nav ul {
-        background: #740000;
+        background: linear-gradient(#4d4d4d89, #c30000);
+        backdrop-filter: blur(2rem);
         position: fixed;
         top: 0;
-        right: -270px;
-        width: 270px;
+        right: -100%;
+        width: 350px;
         height: 100vh;
-        padding: 50px 0;
+        padding: 100px 0;
         z-index: 2;
+        transition: .6s ease-in-out;
     }
     nav ul li {
         display: flex;
         align-items: center;
         text-align: justify;
         text-justify: distribute;
+        padding: 12px;
         width: 100%;
-        background: linear-gradient(#ffffff00, #640000fd);
-    }
-    nav ul li:hover {
-        margin-left: 40px;
-    }
-    .fa-icons {
-        font-size: 18px;
-        margin: 15px 25px;
     }
     nav ul .fa-xmark {
         position: absolute;
-        top: 5px;
-        left: -5px;
+        top: 5%;
+        left: 10%;
         cursor: pointer;
     }
     .sub-title {
@@ -597,25 +592,24 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul {
-        background: #740000;
+        background: linear-gradient(#4d4d4d89, #c30000);
+        backdrop-filter: blur(2rem);
         position: fixed;
         top: 0;
-        right: -250px;
-        width: 250px;
+        right: -100%;
+        width: 350px;
         height: 100vh;
-        padding: 50px 0;
+        padding: 100px 0;
         z-index: 2;
+        transition: 1s ease-in-out;
     }
     nav ul li {
         display: flex;
         align-items: center;
         text-align: justify;
         text-justify: distribute;
+        padding: 12px 0;
         width: 100%;
-        background: linear-gradient(#ffffff00, #640000fd);
-    }
-    nav ul li:hover {
-        margin-left: 40px;
     }
     .fa-icons {
         font-size: 18px;
