@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Website Icon" href="images/icon.png" type="png" title="Icon">
     <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/2f5a08066a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Albert Kiama</title>
 </head>
 <body>
@@ -23,9 +23,9 @@
                     <li><a href="#services">Servises</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                    <i class="fa-solid fa-icons fa-xmark" style="color: #ffffff;" onclick="closeMenu()"></i>
+                    <i class="f-icons fa-solid fa-x" style="color: #ffffff;" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <i class="f-icons fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Designer</p>
@@ -91,21 +91,21 @@
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
+            <div class="service">
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
                 <p>"Looking for a web designer who combines creativity and technical expertise? 
                    Look no further! With a background in computer science and a passion for stunning web experiences,
                     I bring a unique blend of artistic vision and technical know-how."</p>
             </div>
-            <div>
+            <div class="service">
                 <i class="fa-solid fa-globe"></i>
                 <h2>Graphic Design</h2>
                 <p>"Searching for a skilled graphic designer to bring your ideas to life? Your search ends here!  
                     As a computer science graduate with a keen eye for aesthetics, I possess the perfect blend of technical proficiency 
                     and artistic flair."</p>
             </div>
-            <div>
+            <div class="service">
                 <i class="fa-brands fa-android"></i>
                 <h2>App Development</h2>
                 <p>"Ready to bring your app ideas to the palms of millions? Look no further! With a solid background in computer 
@@ -116,6 +116,7 @@
 </div>
 
 <!-------------------My Portfolio--------------------->
+
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
@@ -222,7 +223,9 @@
 
 <div id="footer">
     <div class="copyright">
-        <p>Copyright &copy; Albert.<i class="fa-solid fa-people-roof"></i> C.E.O, Infinitix Global Tech</p>
+        <p>Copyright &copy; Albert Kiama, C.E.O & Founder,
+            <a href="https://astronetcorporation.netlify.app">Astronet Corporation</a>
+        </p>
     </div>
 </div>
 
