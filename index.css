@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
 }
 p {
     line-height: 23px;
@@ -30,7 +31,6 @@ p {
     background-image: url(images/Bg_Desktop.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 .container {
     padding: 10px 5%;
@@ -73,7 +73,7 @@ nav .fa-solid {
     display: none;
 }
 .header-text {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
 }
 .header-text h1 {
@@ -98,6 +98,32 @@ nav .fa-solid {
 .resume:hover {
     background: #470000;
     transition: 0.5s;
+}
+.social-icons {
+    display: flex;
+    margin: 4% 0;
+    align-items: center;
+    z-index: 1;
+}
+
+.social-icons a {
+    min-width: 35px;
+    height: 35px;
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: 0.6s;
+}
+.social-icons .fa-brands {
+    font-size: 17px;
+}
+.social-icons a:hover{
+    color: #000000;
+    background: linear-gradient(#ffffffb6, #990101fd);
 }
 
 /*---------------About section-------------*/
@@ -411,47 +437,6 @@ nav .fa-solid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-.social-icons {
-    display: flex;
-    margin: 5% 0;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-.social-icons::before, 
-.social-icons::after{
-    content: '';
-    width: 60%;
-    height: 1px;
-    background: #ffffff;
-    margin: 0 10% 0 5%;
-}
-
-.social-icons::before{
-    margin-right: 1rem;
-}
-
-.social-icons::after{
-    margin-left: 1rem;
-}
-.social-icons a {
-    min-width: 45px;
-    height: 45px;
-    color: #860000;
-    background: #ffffff;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-    margin-right: 20px;
-    transition: 0.6s;
-}
-.social-icons a:hover{
-    color: #ffffff;
-    background: linear-gradient(#ffffffb6, #990101fd);
 }
 .copyright {
     width: 100%;
