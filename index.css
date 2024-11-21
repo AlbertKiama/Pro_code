@@ -37,13 +37,15 @@ p {
     padding: 10px 5%;
 }
 .logo {
-    width: 140px;
+    width: 200px;
+    margin-left: -15px;
 }
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 15px 0;
 }
 nav ul li {
     display: inline-block;
@@ -138,7 +140,7 @@ nav .f-icons {
     flex-basis: 35%;
 }
 .about-col-1 img {
-    width: 95%;
+    width: 100%;
     box-shadow: 3px 3px 10px #860000;
     border-radius: 15px;
 }
@@ -201,7 +203,7 @@ nav .f-icons {
     .services-list {
         display: grid;
         grid-template: repeat(1, 1fr) / repeat(3, 1fr);
-        grid-gap: 40px;
+        grid-gap: 80px;
         margin-top: 50px;
         .service {
             background: #603333;
@@ -213,13 +215,16 @@ nav .f-icons {
             .fa-globe,
             .fa-android,
             .fa-code {
-                font-size: 50px;
-                margin-bottom: 30px;
+                font-size: 55px;
+                margin-bottom: 33px;
             }
             h2 {
                 font-size: 30px;
                 font-weight: 500px;
                 margin-bottom: 15px;
+            }
+            p {
+                padding-right: 20px;
             }
             &:hover {
                 background: #701616;
