@@ -575,6 +575,12 @@ nav .f-icons {
         background-position: center center;
         height: 100vh;
     }
+    nav {
+        height: 10vh;
+    }
+    .header-text {
+        height: 90vh;
+    }
     .header-text h1 {
         font-size: 43px;
     }
