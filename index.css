@@ -320,7 +320,7 @@ nav .f-icons {
 .btn {
     display: block;
     margin: 50px auto;
-    width: fit-content;
+    width: max-content;
     border: 1px solid #860000;
     padding: 10px 40px;
     border-radius: 6px;
