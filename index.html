@@ -61,9 +61,18 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Development</span><br><p style="color: #bbbbbb;">Web Designing & Development</p></li>
-                            <li><span>Android App Design</span><br><p style="color: #bbbbbb;">Designing & Development of Android App</p></li>
-                            <li><span>Graphic Design</span><br><p style="color: #bbbbbb;">Designing of Logos, Fliers, Cards etc</p></li>
+                            <li>
+                                <span>Web Development</span>
+                                <div style="color: #bbbbbb;">Web Designing & Development</div>
+                            </li>
+                            <li>
+                                <span>Android App Design</span>
+                                <div style="color: #bbbbbb;">Designing & Development of Android App</div>
+                            </li>
+                            <li>
+                                <span>Graphic Design</span>
+                                <div style="color: #bbbbbb;">Designing of Logos, Fliers, Cards etc</div>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -223,56 +232,12 @@
 
 <div id="footer">
     <div class="copyright">
-        <p>Copyright &copy; Albert Kiama, C.E.O & Founder,
+        <p>Copyright &copy; Albert Kiama, C.E.O &amp; Founder
             <a href="https://astronetcorporation.netlify.app">Astronet Corporation</a>
         </p>
     </div>
 </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for(tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <script>
-        var sideMenu = document.getElementById("side-menu");
-
-        function openMenu(){
-            sideMenu.style.right = "0"
-        }
-        function closeMenu(){
-            sideMenu.style.right = "-350px"
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGGlcmSV_FNvHDZUgLvhfSA_dwTKRmkrd3Kl3mDeHIQ9iumM-8UxNHI4dp4Ptnsx1RcQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const message = document.getElementById("txt")
-    
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                message.innerHTML = "Message Submitted Successifully"
-                setTimeout(function(){
-                    message.innerHTML =""
-                },1000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
