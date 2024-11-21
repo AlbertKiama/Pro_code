@@ -42,9 +42,11 @@ p {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 .container {
-    padding: 10px 5%;
+    padding: 0 5%;
 }
 .logo {
     width: 200px;
@@ -55,7 +57,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 15px 0;
+    height: 16vh;
 }
 nav ul li {
     display: inline-block;
@@ -86,8 +88,11 @@ nav .f-icons {
     display: none;
 }
 .header-text {
-    margin-top: 15%;
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 84vh;
 }
 .header-text h1 {
     font-size: 60px;
@@ -432,7 +437,7 @@ nav .f-icons {
 }
 
 .contactForm .inputBox input[type="submit"] {
-    width: 100px;
+    width: 100%;
     background: #860000;
     color: #ffffff;
     border: none;
@@ -483,10 +488,6 @@ nav .f-icons {
         background-size: cover;
         background-position: center center;
     }
-    .header-text{
-        margin-top: 35%;
-        font-size: 19px;
-    }
     .header-text h1 {
         font-size: 46px;
     }
@@ -496,7 +497,7 @@ nav .f-icons {
         border-radius: 10px;
     }
     .social-icons {
-        margin-top: 10%;
+        margin-top: 7%;
     }
     .logo {
         width: 140px;
@@ -525,7 +526,7 @@ nav .f-icons {
         padding: 12px;
         width: 100%;
     }
-    nav ul .fa-x {
+    nav ul .fa-xmark {
         position: absolute;
         top: 5%;
         left: 17%;
@@ -572,10 +573,7 @@ nav .f-icons {
         background-image: url(images/Bg_Phone.jpg);
         background-size: cover;
         background-position: center center;
-    }
-    .header-text{
-        margin-top: 45%;
-        font-size: 17px;
+        height: 100vh;
     }
     .header-text h1 {
         font-size: 43px;
@@ -624,7 +622,7 @@ nav .f-icons {
         font-size: 18px;
         margin: 15px 25px;
     }
-    nav ul .fa-x {
+    nav ul .fa-xmark {
         position: absolute;
         top: 5%;
         left: 15%;
