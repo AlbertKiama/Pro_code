@@ -6,11 +6,11 @@ const ELEMENTS = {
     form: document.forms['submit-to-google-sheet'],
     message: document.getElementById("txt")
 };
-/*
+
 const CONFIG = {
     scriptURL: 'https://script.google.com/macros/s/AKfycbzGGlcmSV_FNvHDZUgLvhfSA_dwTKRmkrd3Kl3mDeHIQ9iumM-8UxNHI4dp4Ptnsx1RcQ/exec',
     messageTimeout: 1000
-};*/
+};
 
 // Tab functionality
 function opentab(tabname) {
@@ -23,7 +23,7 @@ function opentab(tabname) {
 // Menu functionality
 const openMenu = () => ELEMENTS.sideMenu.style.right = "0";
 const closeMenu = () => ELEMENTS.sideMenu.style.right = "-350px";
-/*
+
 // Form submission
 ELEMENTS.form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -40,7 +40,7 @@ ELEMENTS.form.addEventListener('submit', async (e) => {
     } catch (error) {
         console.error('Error!', error.message);
     }
-});*/
+});
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {

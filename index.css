@@ -218,7 +218,7 @@ nav .f-icons {
     .services-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 40px;
+        gap: 50px;
         margin-top: 50px;
         .service {
             background: #603333;
